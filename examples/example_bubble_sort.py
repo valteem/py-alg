@@ -1,3 +1,6 @@
+# https://stackoverflow.com/a/58751479
+# set PYTHONPATH to project folder
+
 from algpy.sorting.bubble_sort import bubble_sort
 
 def main():
