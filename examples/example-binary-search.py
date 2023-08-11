@@ -1,4 +1,5 @@
-from algpy.recursion.binary_search.binary_search import binary_search
+#from algpy.recursion.binary_search.binary_search import binary_search
+from algpy import binary_search
 
 list_to_search = [1, 8, 15, 22, 29, 36, 37, 41, 44]
 

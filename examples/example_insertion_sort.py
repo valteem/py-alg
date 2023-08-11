@@ -1,4 +1,5 @@
-from algpy.sorting.insertion_sort import insertion_sort
+#from algpy.sorting.insertion_sort import insertion_sort
+from algpy import insertion_sort
 
 
 def main():

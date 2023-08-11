@@ -1,4 +1,5 @@
-from algpy.sorting.selection_sort import selection_sort
+#from algpy.sorting.selection_sort import selection_sort
+from algpy import selection_sort
 
 def main():
     a = list("421543")
