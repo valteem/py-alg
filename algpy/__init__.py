@@ -5,3 +5,5 @@ from .sorting import selection_sort
 from .recursion import binary_search
 from .recursion import factorial
 from .sequences import init_md_array
+from .sequences import Stack
+from .sequences import EmptyStack
