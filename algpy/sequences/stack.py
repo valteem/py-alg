@@ -16,3 +16,18 @@ class Stack:
             if self.is_empty():
                 raise EmptyStack("stack is empty")
             return self._arr.pop()
+    
+__left_delim__ = '{[('
+__right_delim__ =  '}])'
+
+def match_delim(expr) -> bool:
+    s = Stack()
+    for c in expr:
+        if c in __left_delim__:
+            s.push(c)
+        elif c in __right_delim__:
+            if s.is_empty():
+                return False
+            elif __right_delim__.index(c) != __left_delim__.index(s.pop()):
+                return False
+    return s.is_empty()

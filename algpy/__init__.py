@@ -7,3 +7,4 @@ from .recursion import factorial
 from .sequences import init_md_array
 from .sequences import Stack
 from .sequences import EmptyStack
+from .sequences import match_delim

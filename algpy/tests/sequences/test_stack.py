@@ -1,5 +1,6 @@
 from algpy import Stack
 from algpy import EmptyStack
+from algpy import match_delim
 import pytest
 
 def test_stack():
@@ -17,3 +18,10 @@ def test_stack():
     e = s.pop()
     assert e == "e2"
     assert s.top()  == "e1"
+
+def test_match_delim():
+
+    s1 = '{a+[b+(m+n)]}'
+    assert match_delim(s1) == True
+    s2 = '{a+[b+(m+n)]'
+    assert match_delim(s2) == False
