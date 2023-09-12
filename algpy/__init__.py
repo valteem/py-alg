@@ -8,3 +8,5 @@ from .sequences import init_md_array
 from .sequences import Stack
 from .sequences import EmptyStack
 from .sequences import match_delim
+from .sequences import CircularQueue
+from .sequences import EmptyQueue
