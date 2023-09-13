@@ -4,3 +4,5 @@ from .stack import EmptyStack
 from .stack import match_delim
 from .queue import CircularQueue
 from .queue import EmptyQueue
+from .deque import CircularDeque
+from .deque import EmptyDeque

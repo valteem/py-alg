@@ -10,3 +10,5 @@ from .sequences import EmptyStack
 from .sequences import match_delim
 from .sequences import CircularQueue
 from .sequences import EmptyQueue
+from .sequences import CircularDeque
+from .sequences import EmptyDeque
