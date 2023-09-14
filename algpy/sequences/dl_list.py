@@ -28,7 +28,7 @@ class DoubleLinkedList():
         self._tail = None
     def is_empty(self) -> bool:
         return self._size == 0
-    def add_head(self, elt) -> None:
+    def add_to_head(self, elt) -> None:
         if self.is_empty():
             n = Node(elt, None, None)
             self._head = n
@@ -38,6 +38,32 @@ class DoubleLinkedList():
             self._head.set_next(n)
             self._head = n
         self._size += 1
+    def add_to_tail(self, elt) -> None:
+        if self.is_empty():
+            n = Node(elt, None, None)
+            self._head = n
+            self._tail = n
+        else:
+            n = Node(elt, None, self._tail)
+            self._tail.set_prev(n)
+            self._tail = n
+        self._size += 1
+    def remove_from_head(self) -> Any:
+        if self.is_empty():
+            return None
+        r = self._head.elt()
+        self._head = self._head.prev()
+        self._head.set_next(None)
+        self._size -= 1
+        return r
+    def remove_from_tail(self) -> Any:
+        if self.is_empty():
+            return None
+        r = self._tail.elt()
+        self._tail = self._tail.next()
+        self._tail.set_prev(None)
+        self._size -= 1
+        return r
 
     def __str__(self) -> str:
         if self.is_empty():
@@ -52,5 +78,10 @@ class DoubleLinkedList():
     
 l = DoubleLinkedList()
 for v in range(5):
-    l.add_head(v)
+    l.add_to_head(v)
+    l.add_to_tail(v)
+print(l)
+for k in range(4):
+    u = l.remove_from_head()
+    v = l.remove_from_tail()
 print(l)
