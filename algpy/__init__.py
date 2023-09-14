@@ -12,3 +12,4 @@ from .sequences import CircularQueue
 from .sequences import EmptyQueue
 from .sequences import CircularDeque
 from .sequences import EmptyDeque
+from .sequences import DoubleLinkedList

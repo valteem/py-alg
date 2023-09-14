@@ -6,3 +6,4 @@ from .queue import CircularQueue
 from .queue import EmptyQueue
 from .deque import CircularDeque
 from .deque import EmptyDeque
+from .dl_list import DoubleLinkedList

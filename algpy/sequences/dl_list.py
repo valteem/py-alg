@@ -53,7 +53,8 @@ class DoubleLinkedList():
             return None
         r = self._head.elt()
         self._head = self._head.prev()
-        self._head.set_next(None)
+        if not self._head == None:
+            self._head.set_next(None)
         self._size -= 1
         return r
     def remove_from_tail(self) -> Any:
@@ -61,7 +62,8 @@ class DoubleLinkedList():
             return None
         r = self._tail.elt()
         self._tail = self._tail.next()
-        self._tail.set_prev(None)
+        if not self._tail == None:
+            self._tail.set_prev(None)
         self._size -= 1
         return r
 
