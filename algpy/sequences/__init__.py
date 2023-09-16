@@ -10,3 +10,4 @@ from .dl_list import DoubleLinkedList
 from .liststack import ListStack
 from .listqueue import ListQueue
 from .listdeque import ListDeque
+from .ilist import IList
