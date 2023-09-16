@@ -17,3 +17,4 @@ from .sequences import ListStack
 from .sequences import ListQueue
 from .sequences import ListDeque
 from .sequences import IList
+from .sequences import PList
