@@ -60,3 +60,13 @@ class PList(IList):
     def insert_after(self, elt, pos):
         n = self._validate(pos)
         return self.insert_between(elt, n, n._next)
+    
+    # removal, replacement - returning node values (elements)
+    def remove(self, pos):
+        n = self._validate(pos)
+        return super().remove(n) #inherited IList remove() method
+    def replace(self, elt, pos):
+        n = self._validate(pos)
+        r = n._elt
+        n._elt = elt
+        return r

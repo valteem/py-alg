@@ -52,3 +52,55 @@ def test_iter():
     for e in p:
         assert e == i
         i += 1
+
+def test_remove():
+     
+    p = PList()
+     
+    cap = 10
+
+    r = [] # positions for removal
+
+    for i in range(cap):
+        pos = p.insert_to_head(i)
+        if i % 2:
+           r.append(pos) # adding even positions
+    
+    for v in r:
+        p.remove(v) # removing even positions
+
+    i = 0
+    c = p.tail()
+    while i < cap:
+        assert c.elt() == i
+        i += 2
+        c = p.after(c)
+
+
+def test_replace():
+
+    p = PList()
+
+    cap = 10
+
+    for i in range(cap):
+        p.insert_to_head(i)
+
+    c = p.tail()
+    for i in range(cap):
+        p.replace(i * 2, c)
+        c = p.after(c)
+
+    c = p.tail()
+    for i in range(cap):
+        assert c.elt() == i * 2
+        c = p.after(c)
+
+
+    
+
+
+            
+
+      
+    
