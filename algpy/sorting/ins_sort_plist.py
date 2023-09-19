@@ -1,8 +1,6 @@
 # insertion sor of positional list
 
-from algpy import PList
-
-def ins_sort_plist(pl: PList) -> None:
+def ins_sort_plist(pl) -> None:
     point = pl.tail
     while point != pl.head:
         handle = pl.after(point) #assume silently that positional length is longer than one element

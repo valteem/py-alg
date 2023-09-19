@@ -7,7 +7,7 @@ import pytest
 def test_ins_sort_plist():
     pl = PList()
     unsorted_list = ["apple", "onion", "cherry", "berry", "plum", "pear"]
-    for v in range(unsorted_list):
+    for v in unsorted_list:
         pl.insert_to_head(v)
     ins_sort_plist(pl)
     sorted_list = []
