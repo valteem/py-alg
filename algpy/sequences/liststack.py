@@ -1,4 +1,4 @@
-from .dl_list import DoubleLinkedList
+from algpy.sequences.dl_list import DoubleLinkedList
 from typing import Any
 
 class ListStack():
