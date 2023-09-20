@@ -1,5 +1,5 @@
-from algpy import CircularQueue
-from algpy import EmptyQueue
+from algpy.sequences.queue import CircularQueue, EmptyQueue
+
 import pytest
 
 def test_queue():

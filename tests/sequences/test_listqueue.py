@@ -1,4 +1,4 @@
-from algpy import ListQueue
+from algpy.sequences.listqueue import ListQueue
 
 import pytest
 

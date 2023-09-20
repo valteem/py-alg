@@ -1,4 +1,4 @@
-from algpy import PList
+from algpy.sequences.plist import PList
 
 import pytest
 

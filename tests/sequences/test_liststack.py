@@ -1,4 +1,4 @@
-from algpy import ListStack
+from algpy.sequences.liststack import ListStack
 
 import pytest
 

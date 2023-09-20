@@ -1,5 +1,5 @@
-from algpy import CircularDeque
-from algpy import EmptyDeque
+from algpy.sequences.deque import CircularDeque
+#from algpy import EmptyDeque
 import pytest
 
 def test_deque() -> None:

@@ -1,4 +1,4 @@
-from algpy import IList
+from algpy.sequences.ilist import IList
 
 import pytest
 

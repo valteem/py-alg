@@ -1,4 +1,4 @@
-from algpy import ListDeque
+from algpy.sequences.listdeque import ListDeque
 
 import pytest
 

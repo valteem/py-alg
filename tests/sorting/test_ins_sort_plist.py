@@ -1,6 +1,5 @@
-# TODO:fix relative imports 
-from algpy import PList
-from algpy import ins_sort_plist
+from algpy.sequences.plist import PList
+from algpy.sorting.ins_sort_plist import ins_sort_plist
 
 import pytest
 

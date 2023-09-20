@@ -1,6 +1,6 @@
-from algpy import Stack
-from algpy import EmptyStack
-from algpy import match_delim
+from algpy.sequences.stack import Stack
+from algpy.sequences.stack import EmptyStack
+from algpy.sequences.stack import match_delim
 import pytest
 
 def test_stack():

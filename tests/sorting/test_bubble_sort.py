@@ -1,4 +1,4 @@
-from algpy import bubble_sort
+from algpy.sorting.bubble_sort import bubble_sort
 
 def test_bubble_sort():
     a = list("28657814")

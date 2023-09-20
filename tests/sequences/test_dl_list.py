@@ -1,4 +1,4 @@
-from algpy import DoubleLinkedList
+from algpy.sequences.dl_list import DoubleLinkedList
 import pytest
 
 def test_dl_list():
