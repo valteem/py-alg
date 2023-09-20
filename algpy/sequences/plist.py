@@ -1,6 +1,6 @@
 # Positional List ADT based on double linked list with insert/remove operations
 
-from .ilist import IList
+from algpy.sequences.ilist import IList
 
 class PList(IList):
 
@@ -13,7 +13,7 @@ class PList(IList):
         def __eq__(self, other) -> bool:
             return type(other) is type(self) and other._node is self._node # 'is' used for identity, '==' for equality
         def __ne__(self, other) -> bool:
-            return (self == other)
+            return not (self == other)
         
     def _validate(self, pos):
         if not isinstance(pos, self.Position):

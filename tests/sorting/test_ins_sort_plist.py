@@ -10,12 +10,11 @@ def test_ins_sort_plist():
         pl.insert_to_head(v)
     ins_sort_plist(pl)
     sorted_list = []
-    pos = pl.tail
-    elt = pos.elt
-    while elt != None:
+    pos = pl.tail()   
+    for k in range(pl._size): #TODO: replace logic with hidden attribute _size
+        elt = pos.elt()
         sorted_list.append(elt)
         pos = pl.after(pos)
-        elt = pos.elt
     sorted_list_expected = ["apple", "berry", "cherry", "onion", "pear", "plum"]
     assert sorted_list == sorted_list_expected
 
